@@ -1,4 +1,2 @@
-class HH
-  def initialize
-  end
-end
+require 'one_doc'
+puts "hello"

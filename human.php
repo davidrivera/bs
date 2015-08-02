@@ -8,6 +8,25 @@ namespace Human;
  * @package Human
  */
 class Human {
+
+  /**
+   * some constant doc
+   */
+  const SOME_CONSTANT = "FKDJSLF";
+
+  /**
+   * Some public var doc
+   * @var String
+   */
+  public $some_public_var;
+
+  /**
+   * Some private var doc
+   * @var Array
+   */
+  private $some_private_var;
+
+
   /**
    * This is something
    */
@@ -19,7 +38,7 @@ class Human {
    * This says a thing
    * @param  String $thing
    */
-  public function sayThing($thing)
+  private function sayThing($thing)
   {
     echo "$thing";
   }
@@ -27,9 +46,10 @@ class Human {
   /**
    * This returns a thing
    * @param  String $thing
+   * @param String $another this is a definition
    * @return String the thing
    */
-  public function returnThing($thing)
+  public function returnThing($thing, $another)
   {
     return $thing;
   }
