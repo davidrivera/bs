@@ -1421,27 +1421,6 @@ $tests = array(
 			)
 		),
 		/**
-		 * Bundles "Rollout" test, we can use this to slowly rollout bundles to all users
-		 */
-		'bundles.rollout' => array(
-			'weights' => array(
-				'control' => 80,
-				'test' => 20,
-				'automated_test' => 0,
-			),
-			'segments' => array(
-				'control' => array(
-					'inRolloutBundleTest' => '0'
-				),
-				'test' => array(
-					'inRolloutBundleTest' => '1'
-				),
-				'automated_test' => array(
-					'inRolloutBundleTest' => '0'
-				),
-			)
-		),
-		/**
 		 * Test changing the word 'free' in the upper left of the editor to the word 'upgrade'
 		 */
 		'editor.upgrade.linkChange' => array(
@@ -1800,6 +1779,23 @@ $tests = array(
 				)
 			)
 		),
+		/**
+		 * Test reactive chat in editor
+		 */
+		'growth.reactiveChat' => array(
+			'weights' => array(
+				'control' => 80,
+				'test' => 20
+			),
+			'segments' => array(
+				'control' => array(
+					'showReactiveChat' => false
+				),
+				'test' => array(
+					'showReactiveChat' => true
+				)
+			)
+		)
 	);
 foreach ($tests as $testName => $test) {
 
