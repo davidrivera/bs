@@ -40,7 +40,7 @@ class Human {
    */
   private function sayThing($thing)
   {
-    echo "$thing"+"another thingndsjklfdkjlfdjlkvnl";
+    echo "$thing"+"another HELLO";
   }
 
   /**
